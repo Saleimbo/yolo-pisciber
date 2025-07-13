@@ -1,6 +1,9 @@
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image, ImageDraw
+import os
+os.system("pip install opencv-python-headless --force-reinstall")
+
 
 # ------------------ 1. Rutas de los modelos -------------------------------
 # Ajusta las rutas si tus .pt tienen otro nombre o ubicación
