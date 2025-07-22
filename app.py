@@ -8,7 +8,7 @@ os.system("pip install opencv-python-headless --force-reinstall")
 # ------------------ 1. Rutas de los modelos -------------------------------
 # Ajusta las rutas si tus .pt tienen otro nombre o ubicación
 MODEL_PATH_BIG = "best.pt"      # modelo para peces grandes
-MODEL_PATH_SMALL = "best.pt"  # modelo para peces pequeños
+MODEL_PATH_SMALL = "gamba.pt"  # modelo para peces pequeños
 
 # ------------------ 2. Cargar modelos (con caché) -------------------------
 @st.cache_resource
