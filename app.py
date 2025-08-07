@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw
 import os
 
 # Asegura dependencias mínimas (OpenCV para ultralytics)
-os.system("pip install opencv-python-headless --force-reinstall")
+# os.system("pip install opencv-python-headless --force-reinstall")
 
 # ------------------ 1. Rutas de los modelos -------------------------------
 # Ajusta las rutas si tus .pt tienen otro nombre o ubicación
@@ -82,8 +82,8 @@ if uploaded_files:
         with st.spinner("Contando peces…"):
             results = model.predict(
                 img,
-                conf=0.5,  # umbral de confianza
-                iou=0.4,   # umbral IoU para NMS
+                conf=0.3,  # umbral de confianza
+                iou=0.5,   # umbral IoU para NMS
             )[0]
             fish_count = len(results.boxes)
             conteos.append(fish_count)
